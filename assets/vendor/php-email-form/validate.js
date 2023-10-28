@@ -22,7 +22,7 @@
         return;
       }
       thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
+      // thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.sent-message').classList.remove('d-block');
 
       let formData = new FormData( thisForm );
@@ -37,11 +37,11 @@
                 php_email_form_submit(thisForm, action, formData);
               })
             } catch(error) {
-              displayError(thisForm, error);
+              // displayError(thisForm, error);
             }
           });
         } else {
-          displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
+          // displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
         }
       } else {
         php_email_form_submit(thisForm, action, formData);
@@ -78,8 +78,11 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+    thisForm.querySelector('.sent-message').innerHTML = 'Thank you for connecting with us!';
+    thisForm.querySelector('.sent-message').classList.add('d-block');
+    setTimeout(() => {
+      thisForm.querySelector('.sent-message').classList.remove('d-block');
+    }, 5000);
   }
 
 })();
