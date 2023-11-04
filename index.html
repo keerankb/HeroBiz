@@ -61,7 +61,7 @@
           <li><a class="nav-link scrollto" href="#">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li><a class="nav-link scrollto" href="index.html#onfocus">Play</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Features</a></li>
           <li><a class="nav-link scrollto" href="index.html#testimonials">Reviews</a></li>
           <li><a class="nav-link scrollto" href="index.html#pricing">Charts</a></li>
           <li><a class="nav-link scrollto" href="index.html#gallery">Gallery</a></li>
@@ -98,7 +98,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
             <div class="service-item position-relative text-center w-100">
               <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Entertainment</a></h4>
+              <h4 class="stretched-link">Entertainment</h4>
               <p>Play Your Way, Every Day!</p>
             </div>
           </div><!-- End Service Item -->
@@ -106,7 +106,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
             <div class="service-item position-relative text-center w-100">
               <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Safe and Secure</a></h4>
+              <h4 class="stretched-link">Safe and Secure</h4>
               <p>Game with Confidence, Your Safety is Our Priority!</p>
             </div>
           </div><!-- End Service Item -->
@@ -114,7 +114,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
             <div class="service-item position-relative text-center w-100">
               <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Rewards</a></h4>
+              <h4 class="stretched-link">Rewards</h4>
               <p>Game, Win, Repeat - The Rewards Never End!</p>
             </div>
           </div><!-- End Service Item -->
@@ -122,7 +122,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
             <div class="service-item position-relative text-center w-100">
               <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link">Customer Support</a></h4>
+              <h4 class="stretched-link">Customer Support</h4>
               <p>We're Here for You, Every Game, Every Day!</p>
             </div>
           </div><!-- End Service Item -->
@@ -279,7 +279,7 @@
                 <div class="icon">
                   <i class="bi bi-activity"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <a class="stretched-link">
                   <h3>User Registration and Profiles</h3>
                 </a>
                 <p>Offer a seamless registration process and allow users to create and manage profiles. Profiles can store preferences, game history, and more</p>
@@ -296,7 +296,7 @@
                 <div class="icon">
                   <i class="bi bi-broadcast"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <a class="stretched-link">
                   <h3>Variety of Games</h3>
                 </a>
                 <p>Provide a diverse selection of games, including classic variations and innovative versions, to cater to different player preferences</p>
@@ -313,7 +313,7 @@
                 <div class="icon">
                   <i class="bi bi-easel"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <a class="stretched-link">
                   <h3>Convenient Deposits and Withdrawals</h3>
                 </a>
                 <p>Facilitate easy deposits and withdrawals with a variety of payment options</p>
@@ -330,11 +330,10 @@
                 <div class="icon">
                   <i class="bi bi-bounding-box-circles"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <a class="stretched-link">
                   <h3>Customer Support</h3>
                 </a>
                 <p>Provide responsive and helpful customer support to assist users with their questions, issues, and concerns</p>
-                <a href="#" class="stretched-link"></a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -348,11 +347,10 @@
                 <div class="icon">
                   <i class="bi bi-calendar4-week"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <a class="stretched-link">
                   <h3>Regular Updates</h3>
                 </a>
                 <p>Keep the platform up to date with new features & security updates to for dynamic gaming experience</p>
-                <a href="#" class="stretched-link"></a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -366,11 +364,10 @@
                 <div class="icon">
                   <i class="bi bi-chat-square-text"></i>
                 </div>
-                <a href="#" class="stretched-link">
+                <a class="stretched-link">
                   <h3>Feedback and Suggestions</h3>
                 </a>
                 <p>Encourage users to provide feedback and suggestions to help improve the gaming experience</p>
-                <a href="#" class="stretched-link"></a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -773,73 +770,68 @@
           <h2>Gallery</h2>
           <p>A Digital Gallery of Endless Inspiration</p>
         </div>
-
-        <div class="row g-0" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-              <a href="assets/img/portfolio/app-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/portfolio/app-1.jpg" alt="" class="img-fluid">
-              </a>
+        <div id="imageGallery" class="carousel slide gallery-carousel" data-bs-ride="carousel" data-aos="fade-left">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/screenshots/screenshot_1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_6.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_7.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_8.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_9.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_10.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_11.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_12.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_13.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_14.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_15.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_16.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/screenshots/screenshot_17.png" class="d-block w-100" alt="...">
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
-              <a href="assets/img/portfolio/app-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/portfolio/app-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-              <a href="assets/img/portfolio/app-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/portfolio/app-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
-              <a href="assets/img/portfolio/app-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/portfolio/app-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-              <a href="assets/img/portfolio/app-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/portfolio/app-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
-              <a href="assets/img/portfolio/app-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/portfolio/app-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
-              <a href="assets/img/portfolio/app-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/portfolio/app-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
-              <a href="assets/img/portfolio/app-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/portfolio/app-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageGallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageGallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
       </div>

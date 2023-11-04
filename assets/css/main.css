@@ -1119,6 +1119,10 @@ section {
   color: var(--color-primary);
 }
 
+.featured-services .stretched-link {
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1579,6 +1583,11 @@ section {
   overflow: hidden;
 }
 
+.services .service-item {
+  border: 2px solid #df1529;
+  border-radius: 10px;
+}
+
 .services .img img {
   transition: 0.6s;
   min-height: 300px;
@@ -1961,6 +1970,17 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+.gallery .gallery-carousel {
+  width: 45%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 340px) and (max-width: 767px) {
+  .gallery .gallery-carousel {
+      width: 80%;
+  }
+}
+
 
 .gallery .gallery-item {
   overflow: hidden;
