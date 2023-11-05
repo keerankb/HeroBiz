@@ -88,6 +88,12 @@ section {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 340px) and (max-width: 767px) {
+  section {
+    padding: 35px 0;
+  }
+}
+
 .section-header {
   text-align: center;
   padding-bottom: 40px;
@@ -1796,6 +1802,14 @@ section {
   flex-direction: column;
   border: 4px solid var(--color-white);
   overflow: hidden;
+  width: 50%;
+  margin: auto;
+}
+@media only screen and (min-width: 340px) and (max-width: 767px) {
+  .pricing .pricing-item {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .pricing .pricing-header {
@@ -1895,12 +1909,17 @@ section {
   color: var(--color-white);
 }
 
-.price-table-wrapper {
+.game-chart-table {
+  width: 50%;
+  font-size: 14px;
+  border-color: transparent;
   border: 4px solid var(--color-primary);
 }
 
-.game-chart-table {
-  border-color: transparent;
+@media only screen and (min-width: 340px) and (max-width: 767px) {
+  .game-chart-table {
+    width: 90%;
+  }
 }
 
 .game-chart-table tbody {
@@ -1954,7 +1973,7 @@ section {
   padding: 15px 40px 20px 60px;
   font-weight: 600;
   border: 0;
-  font-size: 17px;
+  font-size: 16px;
   color: var(--color-default);
   text-align: left;
   background: var(--color-white);
@@ -1992,7 +2011,7 @@ section {
 }
 
 .faq-bg-img {
-  background-image: url("assets/img/faq.jpg");
+  background-image: url("../img/faq.jpg");
 }
 
 /*--------------------------------------------------------------
